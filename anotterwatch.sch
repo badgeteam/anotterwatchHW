@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 500  1150 0    50   ~ 0
-Todo: \nESP \nSerial-USB (with esd) \nUSB-C (lib has to be drawn) \nDisplay AFE (niklas) \nRGB LED \nWhite LED \nSensors (TBD)
+Todo: \nESP \nSerial-USB (with esd)  \nDisplay AFE (niklas) \nRGB LED \nWhite LED \nSensors (TBD)\nButtons
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5C6DC086
@@ -22,8 +22,325 @@ P 1500 2950
 F 0 "J1" H 1605 3817 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1605 3726 50  0000 C CNN
 F 2 "badgelib:USB-C 16Pin" H 1650 2950 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1650 2950 50  0001 C CNN
+F 3 "https://nl.aliexpress.com/item/100PCS-LOT-USB-connector-Type-C-3-1-Female-connector-16Pin-SMD-SMT-Type-with-4/32822609480.html" H 1650 2950 50  0001 C CNN
 	1    1500 2950
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C6E198C
+P 1500 3850
+F 0 "#PWR0101" H 1500 3600 50  0001 C CNN
+F 1 "GND" H 1505 3677 50  0000 C CNN
+F 2 "" H 1500 3850 50  0001 C CNN
+F 3 "" H 1500 3850 50  0001 C CNN
+	1    1500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C6E19B1
+P 1200 4250
+F 0 "#PWR0102" H 1200 4000 50  0001 C CNN
+F 1 "GND" H 1205 4077 50  0000 C CNN
+F 2 "" H 1200 4250 50  0001 C CNN
+F 3 "" H 1200 4250 50  0001 C CNN
+	1    1200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5C6E19F9
+P 1200 4050
+F 0 "C1" H 1292 4096 50  0000 L CNN
+F 1 "100p" H 1292 4005 50  0000 L CNN
+F 2 "" H 1200 4050 50  0001 C CNN
+F 3 "~" H 1200 4050 50  0001 C CNN
+	1    1200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4250 1200 4150
+Wire Wire Line
+	1200 3950 1200 3850
+$Comp
+L Device:R_Small R1
+U 1 1 5C6E1AEB
+P 2350 2550
+F 0 "R1" V 2350 2550 50  0000 C CNN
+F 1 "5k1" V 2245 2550 50  0000 C CNN
+F 2 "" H 2350 2550 50  0001 C CNN
+F 3 "~" H 2350 2550 50  0001 C CNN
+	1    2350 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5C6E1B28
+P 2350 2650
+F 0 "R2" V 2350 2650 50  0000 C CNN
+F 1 "5k1" V 2450 2650 50  0000 C CNN
+F 2 "" H 2350 2650 50  0001 C CNN
+F 3 "~" H 2350 2650 50  0001 C CNN
+	1    2350 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2550 2100 2550
+Wire Wire Line
+	2100 2650 2250 2650
+Wire Wire Line
+	2450 2650 2650 2650
+Wire Wire Line
+	2650 2550 2450 2550
+Wire Wire Line
+	2650 2550 2650 2650
+Connection ~ 2650 2650
+Wire Wire Line
+	2650 2650 2650 2700
+$Comp
+L power:GND #PWR0103
+U 1 1 5C6E1C3F
+P 2650 2700
+F 0 "#PWR0103" H 2650 2450 50  0001 C CNN
+F 1 "GND" H 2655 2527 50  0000 C CNN
+F 2 "" H 2650 2700 50  0001 C CNN
+F 3 "" H 2650 2700 50  0001 C CNN
+	1    2650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0104
+U 1 1 5C6E1CAC
+P 2300 2350
+F 0 "#PWR0104" H 2300 2200 50  0001 C CNN
+F 1 "VBUS" V 2315 2478 50  0000 L CNN
+F 2 "" H 2300 2350 50  0001 C CNN
+F 3 "" H 2300 2350 50  0001 C CNN
+	1    2300 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 2350 2100 2350
+Wire Wire Line
+	2100 2850 2150 2850
+Wire Wire Line
+	2150 2850 2150 2950
+Wire Wire Line
+	2100 2950 2150 2950
+Connection ~ 2150 2950
+Wire Wire Line
+	2100 3150 2150 3150
+Wire Wire Line
+	2150 3150 2150 3050
+Wire Wire Line
+	2150 3050 2100 3050
+Text Label 2300 3150 2    50   ~ 0
+Dp
+Text Label 2300 2950 2    50   ~ 0
+Dn
+Connection ~ 2150 3150
+Wire Wire Line
+	2150 2950 2300 2950
+Wire Wire Line
+	2150 3150 2300 3150
+$Comp
+L Power_Protection:USBLC6-2SC6 U1
+U 1 1 5C6E2541
+P 1500 5300
+F 0 "U1" H 1300 5700 50  0000 C CNN
+F 1 "USBLC6-4SC6" H 1900 5700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 750 5700 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 1700 5650 50  0001 C CNN
+	1    1500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0105
+U 1 1 5C6E25E7
+P 1500 4700
+F 0 "#PWR0105" H 1500 4550 50  0001 C CNN
+F 1 "VBUS" H 1515 4873 50  0000 C CNN
+F 2 "" H 1500 4700 50  0001 C CNN
+F 3 "" H 1500 4700 50  0001 C CNN
+	1    1500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4700 1500 4800
+$Comp
+L power:GND #PWR0106
+U 1 1 5C6E28E5
+P 1500 5900
+F 0 "#PWR0106" H 1500 5650 50  0001 C CNN
+F 1 "GND" H 1505 5727 50  0000 C CNN
+F 2 "" H 1500 5900 50  0001 C CNN
+F 3 "" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5900 1500 5800
+Text Label 850  5200 0    50   ~ 0
+Dn
+Wire Wire Line
+	850  5200 1000 5200
+Text Label 2150 5200 2    50   ~ 0
+Dp
+Wire Wire Line
+	2000 5200 2150 5200
+$Comp
+L LED:SK6812 D1
+U 1 1 5C6E3DDA
+P 4750 1600
+F 0 "D1" H 5091 1646 50  0000 L CNN
+F 1 "SK6812" H 5091 1555 50  0000 L CNN
+F 2 "badgelib:sk6812_side" H 4800 1300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 4850 1225 50  0001 L TNN
+	1    4750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D2
+U 1 1 5C6E3E9C
+P 5750 1600
+F 0 "D2" H 6091 1646 50  0000 L CNN
+F 1 "SK6812" H 6091 1555 50  0000 L CNN
+F 2 "badgelib:sk6812_side" H 5800 1300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 5850 1225 50  0001 L TNN
+	1    5750 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1600 5050 1600
+$Comp
+L power:VDD #PWR0107
+U 1 1 5C6E428D
+P 5750 1250
+F 0 "#PWR0107" H 5750 1100 50  0001 C CNN
+F 1 "VDD" H 5767 1423 50  0000 C CNN
+F 2 "" H 5750 1250 50  0001 C CNN
+F 3 "" H 5750 1250 50  0001 C CNN
+	1    5750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0108
+U 1 1 5C6E42D2
+P 4750 1250
+F 0 "#PWR0108" H 4750 1100 50  0001 C CNN
+F 1 "VDD" H 4767 1423 50  0000 C CNN
+F 2 "" H 4750 1250 50  0001 C CNN
+F 3 "" H 4750 1250 50  0001 C CNN
+	1    4750 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1250 4750 1300
+Wire Wire Line
+	5750 1300 5750 1250
+$Comp
+L power:GND #PWR0109
+U 1 1 5C6E4795
+P 5750 1950
+F 0 "#PWR0109" H 5750 1700 50  0001 C CNN
+F 1 "GND" H 5755 1777 50  0000 C CNN
+F 2 "" H 5750 1950 50  0001 C CNN
+F 3 "" H 5750 1950 50  0001 C CNN
+	1    5750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1950 5750 1900
+$Comp
+L power:GND #PWR0110
+U 1 1 5C6E4A3C
+P 4750 1950
+F 0 "#PWR0110" H 4750 1700 50  0001 C CNN
+F 1 "GND" H 4755 1777 50  0000 C CNN
+F 2 "" H 4750 1950 50  0001 C CNN
+F 3 "" H 4750 1950 50  0001 C CNN
+	1    4750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1950 4750 1900
+Text Label 4100 1600 0    50   ~ 0
+sk6812
+Wire Wire Line
+	4100 1600 4450 1600
+$Comp
+L Device:C_Small C2
+U 1 1 5C6E554C
+P 6550 1600
+F 0 "C2" H 6642 1646 50  0000 L CNN
+F 1 "100n" H 6642 1555 50  0000 L CNN
+F 2 "" H 6550 1600 50  0001 C CNN
+F 3 "~" H 6550 1600 50  0001 C CNN
+	1    6550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0111
+U 1 1 5C6E55B6
+P 6550 1450
+F 0 "#PWR0111" H 6550 1300 50  0001 C CNN
+F 1 "VDD" H 6567 1623 50  0000 C CNN
+F 2 "" H 6550 1450 50  0001 C CNN
+F 3 "" H 6550 1450 50  0001 C CNN
+	1    6550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1450 6550 1500
+$Comp
+L power:GND #PWR0112
+U 1 1 5C6E58B7
+P 6550 1750
+F 0 "#PWR0112" H 6550 1500 50  0001 C CNN
+F 1 "GND" H 6555 1577 50  0000 C CNN
+F 2 "" H 6550 1750 50  0001 C CNN
+F 3 "" H 6550 1750 50  0001 C CNN
+	1    6550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1750 6550 1700
+$Comp
+L Device:C_Small C3
+U 1 1 5C6E6342
+P 6900 1600
+F 0 "C3" H 6992 1646 50  0000 L CNN
+F 1 "100n" H 6992 1555 50  0000 L CNN
+F 2 "" H 6900 1600 50  0001 C CNN
+F 3 "~" H 6900 1600 50  0001 C CNN
+	1    6900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0113
+U 1 1 5C6E6349
+P 6900 1450
+F 0 "#PWR0113" H 6900 1300 50  0001 C CNN
+F 1 "VDD" H 6917 1623 50  0000 C CNN
+F 2 "" H 6900 1450 50  0001 C CNN
+F 3 "" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5C6E6678
+P 6900 1750
+F 0 "#PWR0114" H 6900 1500 50  0001 C CNN
+F 1 "GND" H 6905 1577 50  0000 C CNN
+F 2 "" H 6900 1750 50  0001 C CNN
+F 3 "" H 6900 1750 50  0001 C CNN
+	1    6900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1750 6900 1700
+Wire Wire Line
+	6900 1500 6900 1450
 $EndSCHEMATC
