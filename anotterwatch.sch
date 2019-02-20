@@ -190,24 +190,14 @@ Dp
 Wire Wire Line
 	2000 5200 2150 5200
 $Comp
-L LED:SK6812 D1
-U 1 1 5C6E3DDA
-P 1250 6950
-F 0 "D1" H 1591 6996 50  0000 L CNN
-F 1 "SK6812" H 1591 6905 50  0000 L CNN
-F 2 "badgelib:sk6812_side" H 1300 6650 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 1350 6575 50  0001 L TNN
-	1    1250 6950
-	1    0    0    -1  
-$EndComp
-$Comp
 L LED:SK6812 D2
 U 1 1 5C6E3E9C
 P 2250 6950
 F 0 "D2" H 2591 6996 50  0000 L CNN
 F 1 "SK6812" H 2591 6905 50  0000 L CNN
 F 2 "badgelib:sk6812_side" H 2300 6650 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 2350 6575 50  0001 L TNN
+F 3 "https://de.aliexpress.com/item/10-3000-st-cke-SK6812-4020-Seite-Emmitting-RGB-LED-mit-eingebauten-SK6812-IC-SMD-4020/32877531241.html" H 2350 6575 50  0001 L TNN
+F 4 "SK6812 4020" H 2250 6950 50  0001 C CNN "Type"
 	1    2250 6950
 	1    0    0    -1  
 $EndComp
@@ -350,7 +340,8 @@ P 4900 6700
 F 0 "D3" V 4938 6583 50  0000 R CNN
 F 1 "LED" V 4847 6583 50  0000 R CNN
 F 2 "badgelib:RZX-S020CCW-0.4T" H 4900 6700 50  0001 C CNN
-F 3 "~" H 4900 6700 50  0001 C CNN
+F 3 "https://de.aliexpress.com/item/2000-st-cke-Rolle-Ultra-slim-0-4mm-seite-view-LED-020-SMD-geeignet-f-r/32920375451.html" H 4900 6700 50  0001 C CNN
+F 4 "RZX-S020CCW-0.4T" V 4900 6700 50  0001 C CNN "Type"
 	1    4900 6700
 	0    -1   -1   0   
 $EndComp
@@ -452,4 +443,16 @@ Text Label 4050 7100 0    50   ~ 0
 LED
 Wire Wire Line
 	4050 7100 4200 7100
+$Comp
+L LED:SK6812 D?
+U 1 1 5C6F42D3
+P 1250 6950
+F 0 "D?" H 1591 6996 50  0000 L CNN
+F 1 "SK6812" H 1591 6905 50  0000 L CNN
+F 2 "badgelib:sk6812_side" H 1300 6650 50  0001 L TNN
+F 3 "https://de.aliexpress.com/item/10-3000-st-cke-SK6812-4020-Seite-Emmitting-RGB-LED-mit-eingebauten-SK6812-IC-SMD-4020/32877531241.html" H 1350 6575 50  0001 L TNN
+F 4 "SK6812 4020" H 1250 6950 50  0001 C CNN "Type"
+	1    1250 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
