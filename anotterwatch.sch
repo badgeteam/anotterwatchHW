@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:anotterwatch-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -453,6 +454,17 @@ F 2 "badgelib:sk6812_side" H 1300 6650 50  0001 L TNN
 F 3 "https://de.aliexpress.com/item/10-3000-st-cke-SK6812-4020-Seite-Emmitting-RGB-LED-mit-eingebauten-SK6812-IC-SMD-4020/32877531241.html" H 1350 6575 50  0001 L TNN
 F 4 "SK6812 4020" H 1250 6950 50  0001 C CNN "Type"
 	1    1250 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L badgelib:ST7789V U?
+U 1 1 5C7D4E59
+P 5700 3900
+F 0 "U?" H 5650 4550 50  0000 L CNN
+F 1 "ST7789V" H 5550 4450 50  0000 L CNN
+F 2 "" H 6600 4350 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/3787/FRD154B12001-A.pdf" H 6600 4350 50  0001 C CNN
+	1    5700 3900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
