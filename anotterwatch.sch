@@ -824,4 +824,16 @@ Text GLabel 10950 4650 3    50   Input ~ 0
 IO0
 Text GLabel 10950 3800 1    50   Input ~ 0
 EN
+$Comp
+L ESP32-footprints-Shem-Lib:ESP32 U?
+U 1 1 5C71E383
+P 5050 3500
+F 0 "U?" H 5050 5337 60  0000 C CNN
+F 1 "ESP32" H 5050 5231 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32" H 5050 1875 60  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5500 4400 60  0001 C CNN
+F 4 "https://github.com/adamjvr/ESP32-kiCAD-Footprints" H 5050 3500 50  0001 C CNN "Lib"
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
