@@ -836,4 +836,63 @@ F 4 "https://github.com/adamjvr/ESP32-kiCAD-Footprints" H 5050 3500 50  0001 C C
 	1    5050 3500
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C71EB10
+P 4050 1900
+F 0 "#PWR?" H 4050 1750 50  0001 C CNN
+F 1 "VCC" H 4067 2073 50  0000 C CNN
+F 2 "" H 4050 1900 50  0001 C CNN
+F 3 "" H 4050 1900 50  0001 C CNN
+	1    4050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1950 4050 1950
+Wire Wire Line
+	4050 1950 4050 1900
+Wire Wire Line
+	4200 2050 4050 2050
+Wire Wire Line
+	4050 2050 4050 1950
+Connection ~ 4050 1950
+Wire Wire Line
+	4200 2150 4050 2150
+Wire Wire Line
+	4050 2150 4050 2050
+Connection ~ 4050 2050
+Wire Wire Line
+	4200 2250 4050 2250
+Wire Wire Line
+	4050 2250 4050 2150
+Connection ~ 4050 2150
+Wire Wire Line
+	4200 2350 4050 2350
+Wire Wire Line
+	4050 2250 4050 2350
+Connection ~ 4050 2250
+Wire Wire Line
+	4200 2450 4050 2450
+Wire Wire Line
+	4050 2450 4050 2350
+Connection ~ 4050 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5C725A2C
+P 4200 4950
+F 0 "#PWR?" H 4200 4700 50  0001 C CNN
+F 1 "GND" H 4205 4777 50  0000 C CNN
+F 2 "" H 4200 4950 50  0001 C CNN
+F 3 "" H 4200 4950 50  0001 C CNN
+	1    4200 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 4600 0    50   Input ~ 0
+TXD
+Text GLabel 4200 4700 0    50   Input ~ 0
+RXD
+Text GLabel 4200 3350 0    50   Input ~ 0
+EN
+Text GLabel 5900 2950 2    50   Input ~ 0
+IO0
 $EndSCHEMATC

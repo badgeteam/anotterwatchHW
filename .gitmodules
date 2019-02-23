@@ -1,0 +1,3 @@
+[submodule "ESP32-kiCAD-Footprints"]
+	path = ESP32-kiCAD-Footprints
+	url = https://github.com/adamjvr/ESP32-kiCAD-Footprints
