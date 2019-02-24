@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name anotterwatch-rescue)(type Legacy)(uri ${KIPRJMOD}/anotterwatch-rescue.lib)(options "")(descr ""))
+  (lib (name TS5A2053)(type Legacy)(uri ${KIPRJMOD}/TS5A2053.lib)(options "")(descr ""))
+  (lib (name TS5A3359DCUT)(type Legacy)(uri ${KIPRJMOD}/TS5A3359DCUT.lib)(options "")(descr ""))
+  (lib (name ADS7946SRTET)(type Legacy)(uri ${KIPRJMOD}/ADS7946SRTET.lib)(options "")(descr ""))
 )
