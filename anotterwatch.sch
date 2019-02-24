@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 500  1150 0    50   ~ 0
-Todo: \nESP \nSerial-USB (with esd)  \nDisplay\nAFE (niklas) \nSensors (TBD)\nButtons\nBattery\n
+Todo: \nESP \nAFE (niklas) \nSensors (TBD)\nButtons\nBattery\n
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5C6DC086
@@ -281,7 +281,7 @@ U 1 1 5C6EE2B4
 P 4800 7100
 F 0 "Q1" H 5005 7146 50  0000 L CNN
 F 1 "Q_NMOS_GSD" H 5005 7055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5000 7200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 7200 50  0001 C CNN
 F 3 "~" H 4800 7100 50  0001 C CNN
 	1    4800 7100
 	1    0    0    -1  
@@ -304,7 +304,7 @@ L Device:R_Small R5
 U 1 1 5C6EEC27
 P 4900 6400
 F 0 "R5" H 4959 6446 50  0000 L CNN
-F 1 "R_LED (150mA)" H 4959 6355 50  0000 L CNN
+F 1 "10" H 4959 6355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 4900 6400 50  0001 C CNN
 F 3 "~" H 4900 6400 50  0001 C CNN
 	1    4900 6400
@@ -460,7 +460,7 @@ U 1 1 5C71F975
 P 8600 5650
 F 0 "Q2" H 8805 5696 50  0000 L CNN
 F 1 "nfet" H 8805 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 8800 5750 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 5750 50  0001 C CNN
 F 3 "~" H 8600 5650 50  0001 C CNN
 	1    8600 5650
 	1    0    0    -1  
@@ -765,7 +765,7 @@ U 1 1 5C72E926
 P 10850 4450
 F 0 "Q4" H 11041 4404 50  0000 L CNN
 F 1 "npn" H 11041 4495 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 11050 4550 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11050 4550 50  0001 C CNN
 F 3 "~" H 10850 4450 50  0001 C CNN
 	1    10850 4450
 	1    0    0    1   
@@ -776,7 +776,7 @@ U 1 1 5C72EA09
 P 10850 4000
 F 0 "Q3" H 11041 4046 50  0000 L CNN
 F 1 "npn" H 11041 3955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 11050 4100 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11050 4100 50  0001 C CNN
 F 3 "~" H 10850 4000 50  0001 C CNN
 	1    10850 4000
 	1    0    0    -1  
@@ -817,17 +817,6 @@ F 2 "ESP32-footprints-Lib:ESP32" H 5050 1875 60  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5500 4400 60  0001 C CNN
 F 4 "https://github.com/adamjvr/ESP32-kiCAD-Footprints" H 5050 3500 50  0001 C CNN "Lib"
 	1    5050 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0132
-U 1 1 5C71EB10
-P 4050 1900
-F 0 "#PWR0132" H 4050 1750 50  0001 C CNN
-F 1 "VCC" H 4067 2073 50  0000 C CNN
-F 2 "" H 4050 1900 50  0001 C CNN
-F 3 "" H 4050 1900 50  0001 C CNN
-	1    4050 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -886,4 +875,254 @@ Wire Wire Line
 	8700 5400 8700 5450
 Text GLabel 9450 5550 0    50   Input ~ 0
 IPS_RST
+$Comp
+L Device:C_Small C?
+U 1 1 5C7354A0
+P 3600 2100
+F 0 "C?" H 3692 2146 50  0000 L CNN
+F 1 "100n" H 3692 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3600 2100 50  0001 C CNN
+F 3 "~" H 3600 2100 50  0001 C CNN
+	1    3600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7354A7
+P 3600 2250
+F 0 "#PWR?" H 3600 2000 50  0001 C CNN
+F 1 "GND" H 3605 2077 50  0000 C CNN
+F 2 "" H 3600 2250 50  0001 C CNN
+F 3 "" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2250 3600 2200
+$Comp
+L Device:C_Small C?
+U 1 1 5C7368F7
+P 3250 2100
+F 0 "C?" H 3342 2146 50  0000 L CNN
+F 1 "10u" H 3342 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3250 2100 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7368FE
+P 3250 2250
+F 0 "#PWR?" H 3250 2000 50  0001 C CNN
+F 1 "GND" H 3255 2077 50  0000 C CNN
+F 2 "" H 3250 2250 50  0001 C CNN
+F 3 "" H 3250 2250 50  0001 C CNN
+	1    3250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2250 3250 2200
+$Comp
+L power:VCC #PWR?
+U 1 1 5C736906
+P 3250 1800
+F 0 "#PWR?" H 3250 1650 50  0001 C CNN
+F 1 "VCC" H 3267 1973 50  0000 C CNN
+F 2 "" H 3250 1800 50  0001 C CNN
+F 3 "" H 3250 1800 50  0001 C CNN
+	1    3250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1900 3600 1900
+Wire Wire Line
+	3250 1900 3250 1800
+Wire Wire Line
+	3250 1900 3250 2000
+Connection ~ 3250 1900
+Wire Wire Line
+	3600 1900 3600 2000
+Connection ~ 3600 1900
+Wire Wire Line
+	3600 1900 3250 1900
+NoConn ~ 4200 2600
+$Comp
+L Device:R_Small R?
+U 1 1 5C73EDA1
+P 3500 3200
+F 0 "R?" V 3696 3200 50  0000 C CNN
+F 1 "10k" V 3605 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C7405C4
+P 3500 3500
+F 0 "C?" H 3592 3546 50  0000 L CNN
+F 1 "100n" H 3592 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3500 3500 50  0001 C CNN
+F 3 "~" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3350 3500 3300
+Text GLabel 3750 3350 2    50   Input ~ 0
+EN
+$Comp
+L power:GND #PWR?
+U 1 1 5C7438C6
+P 3500 3600
+F 0 "#PWR?" H 3500 3350 50  0001 C CNN
+F 1 "GND" H 3505 3427 50  0000 C CNN
+F 2 "" H 3500 3600 50  0001 C CNN
+F 3 "" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C7453B3
+P 3500 3100
+F 0 "#PWR?" H 3500 2950 50  0001 C CNN
+F 1 "VCC" H 3517 3273 50  0000 C CNN
+F 2 "" H 3500 3100 50  0001 C CNN
+F 3 "" H 3500 3100 50  0001 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3350 3500 3350
+Wire Wire Line
+	3500 3350 3500 3400
+Connection ~ 3500 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 5C74C8E4
+P 6200 2250
+F 0 "#PWR?" H 6200 2100 50  0001 C CNN
+F 1 "VCC" H 6217 2423 50  0000 C CNN
+F 2 "" H 6200 2250 50  0001 C CNN
+F 3 "" H 6200 2250 50  0001 C CNN
+	1    6200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2250 5900 2250
+Wire Wire Line
+	5900 1950 6450 1950
+$Comp
+L Device:C_Small C?
+U 1 1 5C753AF6
+P 6450 2100
+F 0 "C?" H 6542 2146 50  0000 L CNN
+F 1 "TBD" H 6542 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6450 2100 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C755644
+P 6850 2100
+F 0 "C?" H 6942 2146 50  0000 L CNN
+F 1 "TBD" H 6942 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6850 2100 50  0001 C CNN
+F 3 "~" H 6850 2100 50  0001 C CNN
+	1    6850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7571DC
+P 6450 2200
+F 0 "#PWR?" H 6450 1950 50  0001 C CNN
+F 1 "GND" H 6455 2027 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C75725E
+P 6850 2200
+F 0 "#PWR?" H 6850 1950 50  0001 C CNN
+F 1 "GND" H 6855 2027 50  0000 C CNN
+F 2 "" H 6850 2200 50  0001 C CNN
+F 3 "" H 6850 2200 50  0001 C CNN
+	1    6850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2000 6450 1950
+$Comp
+L Device:L_Small L?
+U 1 1 5C75B099
+P 6650 1950
+F 0 "L?" V 6835 1950 50  0000 C CNN
+F 1 "TBD" V 6744 1950 50  0000 C CNN
+F 2 "" H 6650 1950 50  0001 C CNN
+F 3 "~" H 6650 1950 50  0001 C CNN
+	1    6650 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 1950 6550 1950
+Connection ~ 6450 1950
+Wire Wire Line
+	6750 1950 6850 1950
+Wire Wire Line
+	6850 2000 6850 1950
+Connection ~ 6850 1950
+Wire Wire Line
+	6850 1950 7000 1950
+$Comp
+L Device:Antenna_Shield AE?
+U 1 1 5C762CF6
+P 7000 1750
+F 0 "AE?" H 7141 1791 50  0000 L CNN
+F 1 "ANT" H 7141 1700 50  0000 L CNN
+F 2 "" H 7000 1850 50  0001 C CNN
+F 3 "~" H 7000 1850 50  0001 C CNN
+	1    7000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C762D83
+P 7250 2000
+F 0 "#PWR?" H 7250 1750 50  0001 C CNN
+F 1 "GND" H 7255 1827 50  0000 C CNN
+F 2 "" H 7250 2000 50  0001 C CNN
+F 3 "" H 7250 2000 50  0001 C CNN
+	1    7250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1950 7100 2000
+Wire Wire Line
+	7100 2000 7250 2000
+Text GLabel 3500 4350 0    50   Input ~ 0
+sk6812
+Text GLabel 3500 4500 0    50   Input ~ 0
+White_LED
+Text GLabel 3500 4700 0    50   Input ~ 0
+IPS_LED
+Text GLabel 3500 4900 0    50   Input ~ 0
+IPS_MOSI
+Text GLabel 3500 5000 0    50   Input ~ 0
+IPS_SCK
+Text GLabel 3500 5100 0    50   Input ~ 0
+IPS_CD
+Text GLabel 3500 5200 0    50   Input ~ 0
+IPS_CS
+Text GLabel 3500 4800 0    50   Input ~ 0
+IPS_RST
+NoConn ~ 2550 6950
 $EndSCHEMATC
