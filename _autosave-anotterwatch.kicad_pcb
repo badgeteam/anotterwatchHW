@@ -409,7 +409,7 @@
     )
   )
 
-  (module badgelib:TMHU26 (layer B.Cu) (tedit 5C72D21D) (tstamp 5C7F55B3)
+  (module badgelib:TMHU26 (layer B.Cu) (tedit 5C72DCCA) (tstamp 5C7F55B3)
     (at 121.5 81.5 90)
     (path /5C731DCE)
     (fp_text reference S1 (at 0 -5.75 90) (layer B.SilkS)
@@ -419,7 +419,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -4 4.8) (end 4 4.8) (layer Eco1.User) (width 0.15))
-    (fp_text user "Board Edge" (at 0 5.75 90) (layer Eco1.User)
+    (fp_text user "Board Edge" (at 0 5.75 90) (layer Eco1.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 6 0.25) (end 6 -4.25) (layer B.SilkS) (width 0.15))

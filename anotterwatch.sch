@@ -17,7 +17,7 @@ $EndDescr
 Text Notes 500  1150 0    50   ~ 0
 Todo: \nESP \nAFE (niklas) \nSensors (TBD)\nButtons\nBattery\n
 $Comp
-L anotterwatch-rescue:USB_C_Receptacle_USB2.0-Connector J1
+L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5C6DC086
 P 1500 2950
 F 0 "J1" H 1605 3817 50  0000 C CNN
@@ -167,37 +167,8 @@ F 3 "" H 1500 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 5900 1500 5800
-$Comp
-L LED:SK6812 D2
-U 1 1 5C6E3E9C
-P 2250 6950
-F 0 "D2" H 2591 6996 50  0000 L CNN
-F 1 "SK6812" H 2591 6905 50  0000 L CNN
-F 2 "badgelib:sk6812_side" H 2300 6650 50  0001 L TNN
-F 3 "https://de.aliexpress.com/item/10-3000-st-cke-SK6812-4020-Seite-Emmitting-RGB-LED-mit-eingebauten-SK6812-IC-SMD-4020/32877531241.html" H 2350 6575 50  0001 L TNN
-F 4 "SK6812 4020" H 2250 6950 50  0001 C CNN "Type"
-	1    2250 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 6950 1550 6950
 Wire Wire Line
 	1250 6600 1250 6650
-Wire Wire Line
-	2250 6650 2250 6600
-$Comp
-L power:GND #PWR0109
-U 1 1 5C6E4795
-P 2250 7300
-F 0 "#PWR0109" H 2250 7050 50  0001 C CNN
-F 1 "GND" H 2255 7127 50  0000 C CNN
-F 2 "" H 2250 7300 50  0001 C CNN
-F 3 "" H 2250 7300 50  0001 C CNN
-	1    2250 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 7300 2250 7250
 $Comp
 L power:GND #PWR0110
 U 1 1 5C6E4A3C
@@ -269,7 +240,7 @@ U 1 1 5C6E9D51
 P 4900 6700
 F 0 "D3" V 4938 6583 50  0000 R CNN
 F 1 "LED" V 4847 6583 50  0000 R CNN
-F 2 "badgelib:RZX-S020CCW-0.4T" H 4900 6700 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm_Horizontal_O1.27mm_Z9.0mm" H 4900 6700 50  0001 C CNN
 F 3 "https://de.aliexpress.com/item/2000-st-cke-Rolle-Ultra-slim-0-4mm-seite-view-LED-020-SMD-geeignet-f-r/32920375451.html" H 4900 6700 50  0001 C CNN
 F 4 "RZX-S020CCW-0.4T" V 4900 6700 50  0001 C CNN "Type"
 	1    4900 6700
@@ -369,7 +340,7 @@ F 4 "SK6812 4020" H 1250 6950 50  0001 C CNN "Type"
 	1    0    0    -1  
 $EndComp
 $Comp
-L anotterwatch-rescue:ST7789V-badgelib U4
+L badgelib:ST7789V U4
 U 1 1 5C7D4E59
 P 9750 5750
 F 0 "U4" H 9700 6400 50  0000 L CNN
@@ -399,17 +370,6 @@ F 1 "VCC" H 3067 6973 50  0000 C CNN
 F 2 "" H 3050 6800 50  0001 C CNN
 F 3 "" H 3050 6800 50  0001 C CNN
 	1    3050 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0108
-U 1 1 5C7D6EEF
-P 2250 6600
-F 0 "#PWR0108" H 2250 6450 50  0001 C CNN
-F 1 "VCC" H 2267 6773 50  0000 C CNN
-F 2 "" H 2250 6600 50  0001 C CNN
-F 3 "" H 2250 6600 50  0001 C CNN
-	1    2250 6600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -807,18 +767,6 @@ Text GLabel 10950 4650 3    50   Input ~ 0
 IO0
 Text GLabel 10950 3800 1    50   Input ~ 0
 EN
-$Comp
-L anotterwatch-rescue:ESP32-ESP32-footprints-Shem-Lib U2
-U 1 1 5C71E383
-P 5050 3500
-F 0 "U2" H 5050 5337 60  0000 C CNN
-F 1 "ESP32" H 5050 5231 60  0000 C CNN
-F 2 "ESP32-footprints-Lib:ESP32" H 5050 1875 60  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5500 4400 60  0001 C CNN
-F 4 "https://github.com/adamjvr/ESP32-kiCAD-Footprints" H 5050 3500 50  0001 C CNN "Lib"
-	1    5050 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 1950 4050 1950
 Wire Wire Line
@@ -1124,11 +1072,33 @@ Text GLabel 3500 5200 0    50   Input ~ 0
 IPS_CS
 Text GLabel 3500 4800 0    50   Input ~ 0
 IPS_RST
-NoConn ~ 2550 6950
 $Sheet
 S 8550 1200 2100 900 
 U 5C72F19A
 F0 "Analog Front End" 50
 F1 "afe.sch" 50
 $EndSheet
+$Comp
+L badgelib:TMHU26 S1
+U 1 1 5C731DCE
+P 7850 2700
+F 0 "S1" H 7850 3025 50  0000 C CNN
+F 1 "TMHU26" H 7850 2934 50  0000 C CNN
+F 2 "badgelib:TMHU26" H 7850 2900 50  0001 C CNN
+F 3 "" H 7850 2900 50  0001 C CNN
+	1    7850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32-footprints-Shem-Lib:ESP32 U2
+U 1 1 5C71E383
+P 5050 3500
+F 0 "U2" H 5050 5337 60  0000 C CNN
+F 1 "ESP32" H 5050 5231 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32" H 5050 1875 60  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5500 4400 60  0001 C CNN
+F 4 "https://github.com/adamjvr/ESP32-kiCAD-Footprints" H 5050 3500 50  0001 C CNN "Lib"
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
