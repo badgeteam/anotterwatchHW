@@ -1,0 +1,94 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SOP50P310X90-8N
+$EndINDEX
+$MODULE SOP50P310X90-8N
+Po 0 0 0 15 00000000 00000000 ~~
+Li SOP50P310X90-8N
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 0.34 -2.175 1 1 0 0.05 N V 21 "SOP50P310X90-8N"
+T1 0.975 2.265 1 1 0 0.05 N V 21 "VAL**"
+DS -1.2 -1.05 1.2 -1.05 0.127 27
+DS 1.2 -1.05 1.2 1.05 0.127 27
+DS 1.2 1.05 -1.2 1.05 0.127 27
+DS -1.2 1.05 -1.2 -1.05 0.127 27
+DS -1.2 -1.199 1.2 -1.199 0.127 21
+DS 1.2 1.199 -1.2 1.199 0.127 21
+DS -2.22 -1.3 2.22 -1.3 0.05 26
+DS 2.22 -1.3 2.22 1.3 0.05 26
+DS 2.22 1.3 -2.22 1.3 0.05 26
+DS -2.22 1.3 -2.22 -1.3 0.05 26
+DC -2.5 -1 -2.4 -1 0.2 21
+DC -2.5 -1 -2.4 -1 0.2 27
+$PAD
+Sh "1" R 1.12 0.27 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.405 -0.75
+$EndPAD
+$PAD
+Sh "2" R 1.12 0.27 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.405 -0.25
+$EndPAD
+$PAD
+Sh "3" R 1.12 0.27 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.405 0.25
+$EndPAD
+$PAD
+Sh "4" R 1.12 0.27 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.405 0.75
+$EndPAD
+$PAD
+Sh "5" R 1.12 0.27 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.405 0.75
+$EndPAD
+$PAD
+Sh "6" R 1.12 0.27 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.405 0.25
+$EndPAD
+$PAD
+Sh "7" R 1.12 0.27 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.405 -0.25
+$EndPAD
+$PAD
+Sh "8" R 1.12 0.27 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.405 -0.75
+$EndPAD
+$EndMODULE SOP50P310X90-8N
