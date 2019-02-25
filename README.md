@@ -2,4 +2,4 @@
 
 Badge for the CCC camp19
 
-[Schematics](schematics.pdf)
+[Schematics](/schematics_V1.0/anotterwatch.pdf)
