@@ -4,4 +4,5 @@
   (lib (name ADS7946SRTET)(type Legacy)(uri ${KIPRJMOD}/ADS7946SRTET.lib)(options "")(descr ""))
   (lib (name badgelib)(type Legacy)(uri ${KIPRJMOD}/badgelib.lib)(options "")(descr ""))
   (lib (name ESP32-footprints-Shem-Lib)(type Legacy)(uri ${KIPRJMOD}/ESP32-kiCAD-Footprints/ESP32-Footprints/ESP32-footprints-Shem-Lib.lib)(options "")(descr ""))
+  (lib (name anotterwatch-rescue)(type Legacy)(uri ${KIPRJMOD}/anotterwatch-rescue.lib)(options "")(descr ""))
 )
