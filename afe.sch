@@ -410,7 +410,7 @@ Wire Wire Line
 	2000 5450 1750 5450
 Connection ~ 1750 5450
 Text Notes 6700 4950 0    79   ~ 0
-Scope Mode:\n- enable reference buffer\n- use I2C to switch between ranges\n(0V to 5V, -6V to 6V, -65V to 65V)\n\nComponent Test Mode:\n- disable reference buffer\n- disable MUX\n- use I2C to create test sequence
+Scope Mode:\n- set DAC pin to input\n- enable reference buffer\n- use I2C to switch between ranges\n(0V to 5V, -6V to 6V, -65V to 65V)\n\nComponent Test Mode:\n- disable reference buffer\n- disable MUX\n- use I2C to create test sequence
 $Comp
 L power:GNDA #PWR043
 U 1 1 5C712B37
@@ -1375,10 +1375,10 @@ Connection ~ 3750 4800
 Text GLabel 8800 1550 0    50   Input ~ 0
 ADC_SCK
 $Comp
-L power:GND #PWR?
+L power:GND #PWR068
 U 1 1 5C916289
 P 8800 2550
-F 0 "#PWR?" H 8800 2300 50  0001 C CNN
+F 0 "#PWR068" H 8800 2300 50  0001 C CNN
 F 1 "GND" V 8805 2377 50  0000 C CNN
 F 2 "" H 8800 2550 50  0001 C CNN
 F 3 "" H 8800 2550 50  0001 C CNN
@@ -1392,10 +1392,10 @@ ADC_ENABLE
 Text GLabel 8800 1450 0    50   Input ~ 0
 ADC_CS
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR067
 U 1 1 5C926BBE
 P 8800 950
-F 0 "#PWR?" H 8800 800 50  0001 C CNN
+F 0 "#PWR067" H 8800 800 50  0001 C CNN
 F 1 "+3.3V" H 8815 1123 50  0000 C CNN
 F 2 "" H 8800 950 50  0001 C CNN
 F 3 "" H 8800 950 50  0001 C CNN
@@ -1403,10 +1403,10 @@ F 3 "" H 8800 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB?
+L Device:Ferrite_Bead_Small FB1
 U 1 1 5C926F74
 P 8550 1050
-F 0 "FB?" V 8313 1050 50  0000 C CNN
+F 0 "FB1" V 8313 1050 50  0000 C CNN
 F 1 "Ferret" V 8404 1050 50  0000 C CNN
 F 2 "" V 8480 1050 50  0001 C CNN
 F 3 "~" H 8550 1050 50  0001 C CNN
@@ -1416,10 +1416,10 @@ $EndComp
 Wire Wire Line
 	8650 1050 8750 1050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR066
 U 1 1 5C92EEAE
 P 8300 950
-F 0 "#PWR?" H 8300 800 50  0001 C CNN
+F 0 "#PWR066" H 8300 800 50  0001 C CNN
 F 1 "+3.3V" H 8315 1123 50  0000 C CNN
 F 2 "" H 8300 950 50  0001 C CNN
 F 3 "" H 8300 950 50  0001 C CNN
@@ -1458,10 +1458,10 @@ F 3 "~" H 1450 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR065
 U 1 1 5C940215
 P 8100 1150
-F 0 "#PWR?" H 8100 900 50  0001 C CNN
+F 0 "#PWR065" H 8100 900 50  0001 C CNN
 F 1 "GNDA" V 8000 1000 50  0000 C CNN
 F 2 "" H 8100 1150 50  0001 C CNN
 F 3 "" H 8100 1150 50  0001 C CNN
@@ -1469,10 +1469,10 @@ F 3 "" H 8100 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 5C94021B
 P 8200 1150
-F 0 "C?" V 8300 1100 50  0000 L CNN
+F 0 "C7" V 8300 1100 50  0000 L CNN
 F 1 "100n" V 8300 900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8200 1150 50  0001 C CNN
 F 3 "~" H 8200 1150 50  0001 C CNN
@@ -1491,10 +1491,10 @@ Wire Wire Line
 Text GLabel 8800 1750 0    50   Input ~ 0
 ADC_CH_SEL
 $Comp
-L Power_Protection:USBLC6-2SC6 U?
+L Power_Protection:USBLC6-2SC6 U13
 U 1 1 5C9740D0
 P 5400 4900
-F 0 "U?" H 5500 5400 50  0000 C CNN
+F 0 "U13" H 5500 5400 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 5750 5300 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4650 5300 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 5600 5250 50  0001 C CNN
@@ -1507,10 +1507,10 @@ Connection ~ 4600 4800
 Wire Wire Line
 	4900 5000 4500 5000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR062
 U 1 1 5C9857C3
 P 5400 5400
-F 0 "#PWR?" H 5400 5150 50  0001 C CNN
+F 0 "#PWR062" H 5400 5150 50  0001 C CNN
 F 1 "GND" H 5405 5227 50  0000 C CNN
 F 2 "" H 5400 5400 50  0001 C CNN
 F 3 "" H 5400 5400 50  0001 C CNN
@@ -1518,10 +1518,10 @@ F 3 "" H 5400 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR061
 U 1 1 5C985C77
 P 5400 4400
-F 0 "#PWR?" H 5400 4250 50  0001 C CNN
+F 0 "#PWR061" H 5400 4250 50  0001 C CNN
 F 1 "+3.3V" H 5415 4573 50  0000 C CNN
 F 2 "" H 5400 4400 50  0001 C CNN
 F 3 "" H 5400 4400 50  0001 C CNN
@@ -1557,10 +1557,10 @@ Wire Wire Line
 Text GLabel 2450 3150 2    50   Input ~ 0
 PARTY_ENABLE
 $Comp
-L Transistor_FET:2N7002 Q?
+L Transistor_FET:2N7002 Q8
 U 1 1 5CAB9B10
 P 5900 3700
-F 0 "Q?" H 5650 3600 50  0000 L CNN
+F 0 "Q8" H 5650 3600 50  0000 L CNN
 F 1 "2N7002" H 5650 3500 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6100 3625 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 5900 3700 50  0001 L CNN
@@ -1576,10 +1576,10 @@ ADC_ENABLE
 Wire Wire Line
 	5850 3500 6000 3500
 $Comp
-L Device:R R?
+L Device:R R46
 U 1 1 5CACC0EF
 P 6000 3350
-F 0 "R?" H 5930 3304 50  0000 R CNN
+F 0 "R46" H 5930 3304 50  0000 R CNN
 F 1 "47k" H 5930 3395 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 3350 50  0001 C CNN
 F 3 "~" H 6000 3350 50  0001 C CNN
@@ -1588,10 +1588,10 @@ F 3 "~" H 6000 3350 50  0001 C CNN
 $EndComp
 Connection ~ 6000 3500
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR063
 U 1 1 5CACC921
 P 6000 3200
-F 0 "#PWR?" H 6000 3050 50  0001 C CNN
+F 0 "#PWR063" H 6000 3050 50  0001 C CNN
 F 1 "+3.3V" H 6015 3373 50  0000 C CNN
 F 2 "" H 6000 3200 50  0001 C CNN
 F 3 "" H 6000 3200 50  0001 C CNN
@@ -1599,14 +1599,56 @@ F 3 "" H 6000 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR064
 U 1 1 5CAD5AA6
 P 6000 3900
-F 0 "#PWR?" H 6000 3650 50  0001 C CNN
+F 0 "#PWR064" H 6000 3650 50  0001 C CNN
 F 1 "GND" H 6005 3727 50  0000 C CNN
 F 2 "" H 6000 3900 50  0001 C CNN
 F 3 "" H 6000 3900 50  0001 C CNN
 	1    6000 3900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP_Small C6
+U 1 1 5CB4B877
+P 1800 7100
+F 0 "C6" H 1888 7146 50  0000 L CNN
+F 1 "4u7" H 1888 7055 50  0000 L CNN
+F 2 "" H 1800 7100 50  0001 C CNN
+F 3 "~" H 1800 7100 50  0001 C CNN
+	1    1800 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7000 1800 6900
+Connection ~ 1800 6900
+$Comp
+L Device:Speaker LS1
+U 1 1 5CB54E3A
+P 2250 7250
+F 0 "LS1" H 2420 7246 50  0000 L CNN
+F 1 "Speaker" H 2420 7155 50  0000 L CNN
+F 2 "" H 2250 7050 50  0001 C CNN
+F 3 "~" H 2240 7200 50  0001 C CNN
+	1    2250 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 5CB54F62
+P 1800 7350
+F 0 "#PWR060" H 1800 7100 50  0001 C CNN
+F 1 "GND" H 1805 7177 50  0000 C CNN
+F 2 "" H 1800 7350 50  0001 C CNN
+F 3 "" H 1800 7350 50  0001 C CNN
+	1    1800 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7200 1800 7250
+Wire Wire Line
+	2050 7250 1800 7250
+Wire Wire Line
+	1800 7350 2050 7350
 $EndSCHEMATC
