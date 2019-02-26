@@ -1475,4 +1475,6 @@ Wire Wire Line
 Connection ~ 950  2500
 Wire Wire Line
 	950  2500 950  2450
+Text Notes 9550 4250 0    50   ~ 0
+Todo add shitty addon connector\n
 $EndSCHEMATC
