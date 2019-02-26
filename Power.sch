@@ -279,7 +279,7 @@ P 6300 3100
 F 0 "U14" H 6300 3970 50  0000 C CNN
 F 1 "TPS63001DRCR" H 6300 3879 50  0000 C CNN
 F 2 "Package_SON:Texas_S-PVSON-N10" H 6300 3100 50  0001 L BNN
-F 3 "Converter DC-DC Single Non-Inverting/Inverting/Step Up/Step Down 1.8V to 5.5V 10-Pin VSON EP T/R" H 6300 3100 50  0001 L BNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63001.pdf" H 6300 3100 50  0001 L BNN
 F 4 "None" H 6300 3100 50  0001 L BNN "Field4"
 F 5 "Unavailable" H 6300 3100 50  0001 L BNN "Field5"
 F 6 "TPS63001DRCR" H 6300 3100 50  0001 L BNN "Field6"
@@ -391,7 +391,7 @@ AR Path="/5C753B69/5C7A88AE" Ref="U1"  Part="1"
 F 0 "U1" H 4050 6115 50  0000 C CNN
 F 1 "TP4056" H 4050 6024 50  0000 C CNN
 F 2 "Package_SO:Diodes_PSOP-8" H 4050 5700 50  0001 C CNN
-F 3 "" H 4050 5700 50  0001 C CNN
+F 3 "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf" H 4050 5700 50  0001 C CNN
 	1    4050 5700
 	1    0    0    -1  
 $EndComp
@@ -581,7 +581,7 @@ L Connector:Conn_01x02_Female J4
 U 1 1 5C7A9992
 P 6700 5350
 F 0 "J4" H 6594 5025 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 6594 5116 50  0000 C CNN
+F 1 "Bat" H 6594 5116 50  0000 C CNN
 F 2 "" H 6700 5350 50  0001 C CNN
 F 3 "~" H 6700 5350 50  0001 C CNN
 	1    6700 5350
@@ -611,4 +611,14 @@ F 3 "" H 6900 5250 50  0001 C CNN
 	1    6900 5250
 	0    1    1    0   
 $EndComp
+Text Notes 5850 4950 0    50   ~ 0
+JST 2.0mm 2pin, need to find out type and pinout
+Text Notes 2800 4650 0    197  ~ 0
+TODO: Ideal diode!
+Text Notes 4900 2050 0    79   ~ 0
+VBAT to 3.3V Buck-Boost
+Text Notes 3550 5150 0    79   ~ 0
+Battery Charging
+Text Notes 4750 6350 0    50   ~ 0
+2k -> 580mA\n3k -> 400mA\n4k -> 300mA\n5k1 -> 240mA
 $EndSCHEMATC

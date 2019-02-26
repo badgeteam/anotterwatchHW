@@ -33,7 +33,7 @@ P 10650 5900
 F 0 "Q1" H 10855 5946 50  0000 L CNN
 F 1 "AO3400" H 10855 5855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 6000 50  0001 C CNN
-F 3 "~" H 10650 5900 50  0001 C CNN
+F 3 "http://aosmd.com/pdfs/datasheet/AO3400.pdf" H 10650 5900 50  0001 C CNN
 	1    10650 5900
 	1    0    0    -1  
 $EndComp
@@ -908,7 +908,8 @@ P 1550 6900
 F 0 "U12" H 1750 7450 50  0000 C CNN
 F 1 "BMI270" H 1800 7350 50  0000 C CNN
 F 2 "badgelib:BMI270" H 1500 7550 50  0001 C CNN
-F 3 "" H 1500 7550 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/783/BST-BMI160-DS000-07-786474.pdf" H 1500 7550 50  0001 C CNN
+F 4 "There is no BMI270 datasheet released yet" H 1550 6900 50  0001 C CNN "Field4"
 	1    1550 6900
 	1    0    0    -1  
 $EndComp
@@ -940,7 +941,7 @@ P 9200 2900
 F 0 "Q2" H 9405 2946 50  0000 L CNN
 F 1 "AO3400" H 9405 2855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9400 3000 50  0001 C CNN
-F 3 "~" H 9200 2900 50  0001 C CNN
+F 3 "http://aosmd.com/pdfs/datasheet/AO3400.pdf" H 9200 2900 50  0001 C CNN
 	1    9200 2900
 	1    0    0    -1  
 $EndComp
