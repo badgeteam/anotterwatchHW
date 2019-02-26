@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -14,131 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L anotterwatch-rescue:USB_C_Receptacle_USB2.0-Connector J1
-U 1 1 5C6DC086
-P 1200 1800
-F 0 "J1" H 1305 2667 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1305 2576 50  0000 C CNN
-F 2 "badgelib:USB-C 16Pin" H 1350 1800 50  0001 C CNN
-F 3 "https://nl.aliexpress.com/item/100PCS-LOT-USB-connector-Type-C-3-1-Female-connector-16Pin-SMD-SMT-Type-with-4/32822609480.html" H 1350 1800 50  0001 C CNN
-	1    1200 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 5C6E198C
-P 1200 2700
-F 0 "#PWR0101" H 1200 2450 50  0001 C CNN
-F 1 "GND" H 1205 2527 50  0000 C CNN
-F 2 "" H 1200 2700 50  0001 C CNN
-F 3 "" H 1200 2700 50  0001 C CNN
-	1    1200 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5C6E19B1
-P 900 3100
-F 0 "#PWR0102" H 900 2850 50  0001 C CNN
-F 1 "GND" H 905 2927 50  0000 C CNN
-F 2 "" H 900 3100 50  0001 C CNN
-F 3 "" H 900 3100 50  0001 C CNN
-	1    900  3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 5C6E19F9
-P 900 2900
-F 0 "C1" H 992 2946 50  0000 L CNN
-F 1 "100p" H 992 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 2900 50  0001 C CNN
-F 3 "~" H 900 2900 50  0001 C CNN
-	1    900  2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	900  3100 900  3000
-Wire Wire Line
-	900  2800 900  2700
-$Comp
-L Device:R_Small R1
-U 1 1 5C6E1AEB
-P 2050 1400
-F 0 "R1" V 2050 1400 50  0000 C CNN
-F 1 "5k1" V 1945 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 1400 50  0001 C CNN
-F 3 "~" H 2050 1400 50  0001 C CNN
-	1    2050 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5C6E1B28
-P 2050 1500
-F 0 "R2" V 2050 1500 50  0000 C CNN
-F 1 "5k1" V 2150 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 1500 50  0001 C CNN
-F 3 "~" H 2050 1500 50  0001 C CNN
-	1    2050 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1950 1400 1800 1400
-Wire Wire Line
-	1800 1500 1950 1500
-Wire Wire Line
-	2150 1500 2350 1500
-Wire Wire Line
-	2350 1400 2150 1400
-Wire Wire Line
-	2350 1400 2350 1500
-Connection ~ 2350 1500
-Wire Wire Line
-	2350 1500 2350 1550
-$Comp
-L power:GND #PWR0103
-U 1 1 5C6E1C3F
-P 2350 1550
-F 0 "#PWR0103" H 2350 1300 50  0001 C CNN
-F 1 "GND" H 2355 1377 50  0000 C CNN
-F 2 "" H 2350 1550 50  0001 C CNN
-F 3 "" H 2350 1550 50  0001 C CNN
-	1    2350 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR0104
-U 1 1 5C6E1CAC
-P 2000 1200
-F 0 "#PWR0104" H 2000 1050 50  0001 C CNN
-F 1 "VBUS" V 2015 1328 50  0000 L CNN
-F 2 "" H 2000 1200 50  0001 C CNN
-F 3 "" H 2000 1200 50  0001 C CNN
-	1    2000 1200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 1200 1800 1200
-Wire Wire Line
-	1800 1700 1850 1700
-Wire Wire Line
-	1850 1700 1850 1800
-Wire Wire Line
-	1800 1800 1850 1800
-Connection ~ 1850 1800
-Wire Wire Line
-	1800 2000 1850 2000
-Wire Wire Line
-	1850 2000 1850 1900
-Wire Wire Line
-	1850 1900 1800 1900
-Connection ~ 1850 2000
-Wire Wire Line
-	1850 1800 2000 1800
-Wire Wire Line
-	1850 2000 2000 2000
 $Comp
 L Device:LED D3
 U 1 1 5C6E9D51
@@ -238,10 +113,6 @@ F 3 "https://cdn-shop.adafruit.com/product-files/3787/FRD154B12001-A.pdf" H 1125
 	1    10350 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 2000 1800 2    50   Input ~ 0
-USB_DN
-Text GLabel 2000 2000 2    50   Input ~ 0
-USB_DP
 $Comp
 L power:GND #PWR0118
 U 1 1 5C71F97C
@@ -1114,7 +985,7 @@ L Device:R_Small R36
 U 1 1 5C76BF5E
 P 6050 7200
 F 0 "R36" H 6109 7246 50  0000 L CNN
-F 1 "5k1" H 6109 7155 50  0000 L CNN
+F 1 "2k5" H 6109 7155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 7200 50  0001 C CNN
 F 3 "~" H 6050 7200 50  0001 C CNN
 	1    6050 7200
@@ -1732,4 +1603,10 @@ Wire Wire Line
 Connection ~ 10700 3000
 Wire Wire Line
 	10700 3000 10700 2900
+$Sheet
+S 900  1200 1450 800 
+U 5C753B69
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
 $EndSCHEMATC
