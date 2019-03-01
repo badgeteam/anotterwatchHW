@@ -21,7 +21,7 @@ P 1550 3350
 F 0 "J4" H 1655 4217 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1655 4126 50  0000 C CNN
 F 2 "badgelib:USB-C 16Pin" H 1700 3350 50  0001 C CNN
-F 3 "https://nl.aliexpress.com/item/100PCS-LOT-USB-connector-Type-C-3-1-Female-connector-16Pin-SMD-SMT-Type-with-4/32822609480.html" H 1700 3350 50  0001 C CNN
+F 3 "http://ae01.alicdn.com/kf/HTB1wQNabjzuK1RjSsppq6xz0XXa4.jpg" H 1700 3350 50  0001 C CNN
 	1    1550 3350
 	1    0    0    -1  
 $EndComp
@@ -692,4 +692,6 @@ F 3 "~" H 6400 2850 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Connection ~ 6400 3050
+NoConn ~ 2150 3850
+NoConn ~ 2150 3950
 $EndSCHEMATC
