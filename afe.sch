@@ -53,7 +53,7 @@ F 3 "~" H 2950 6250 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Text GLabel 4850 7000 2    50   Input ~ 0
-ESP32_ADC
+ESP_ADC
 $Comp
 L Device:R R23
 U 1 1 5C6DE25A
@@ -1771,4 +1771,5 @@ Connection ~ 8100 2800
 Wire Wire Line
 	6000 3450 6000 3500
 Connection ~ 6000 3500
+NoConn ~ 1050 2750
 $EndSCHEMATC

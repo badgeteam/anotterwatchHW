@@ -1861,7 +1861,7 @@ F 3 "" H 1400 6600 50  0001 C CNN
 $EndComp
 Connection ~ 3900 6800
 Wire Wire Line
-	3300 6800 3900 6800
+	3300 6800 3550 6800
 $Comp
 L Device:C_Small C32
 U 1 1 5CE0D6F9
@@ -1896,4 +1896,24 @@ F 3 "~" H 2750 6500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Connection ~ 2850 6300
+Connection ~ 3550 6800
+Wire Wire Line
+	3550 6800 3900 6800
+Connection ~ 1400 6800
+NoConn ~ 10000 5600
+NoConn ~ 10950 5400
+NoConn ~ 10950 5500
+NoConn ~ 10950 5800
+NoConn ~ 10950 5900
+NoConn ~ 5650 3550
+NoConn ~ 5650 3650
+NoConn ~ 5650 3750
+NoConn ~ 5650 3850
+NoConn ~ 5650 3950
+NoConn ~ 5650 4050
+NoConn ~ 3950 1800
+NoConn ~ 3950 1900
+NoConn ~ 3950 3350
+NoConn ~ 3950 3450
+NoConn ~ 4550 7100
 $EndSCHEMATC
