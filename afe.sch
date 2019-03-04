@@ -52,8 +52,6 @@ F 3 "~" H 2950 6250 50  0001 C CNN
 	1    2950 6250
 	0    1    -1   0   
 $EndComp
-Text GLabel 4850 7000 2    50   Input ~ 0
-ESP_ADC
 $Comp
 L Device:R R23
 U 1 1 5C6DE25A
@@ -1772,4 +1770,44 @@ Wire Wire Line
 	6000 3450 6000 3500
 Connection ~ 6000 3500
 NoConn ~ 1050 2750
+$Comp
+L Device:R R50
+U 1 1 5C7E293A
+P 5000 7000
+F 0 "R50" V 5100 6900 50  0000 C CNN
+F 1 "10" V 5100 7100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 7000 50  0001 C CNN
+F 3 "~" H 5000 7000 50  0001 C CNN
+	1    5000 7000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C37
+U 1 1 5C7E2F4C
+P 5200 7100
+F 0 "C37" H 5292 7146 50  0000 L CNN
+F 1 "470p" H 5292 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5200 7100 50  0001 C CNN
+F 3 "~" H 5200 7100 50  0001 C CNN
+	1    5200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5C7E341A
+P 5200 7200
+F 0 "#PWR0116" H 5200 6950 50  0001 C CNN
+F 1 "GND" H 5205 7027 50  0000 C CNN
+F 2 "" H 5200 7200 50  0001 C CNN
+F 3 "" H 5200 7200 50  0001 C CNN
+	1    5200 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 7000 2    50   Input ~ 0
+ESP_ADC
+Wire Wire Line
+	5450 7000 5200 7000
+Connection ~ 5200 7000
+Wire Wire Line
+	5200 7000 5150 7000
 $EndSCHEMATC
