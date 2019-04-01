@@ -16,3 +16,23 @@ Prototype d0a3733 ordered
 
 ![Front](https://defeestboek.nl/n/src/155173954356.jpg "AnOtter_Watch front")
 
+## V1.1
+
+# Errors
+
+ - [] ESP-Pico-D4 foorpint
+ - [] Display cutout
+ - [] TCA9535 GND level is ~0.5V when USB is unplugged
+ - [] WS2812 leds are not working when USB is plugged
+ - [] Button down can only be pressed when the battery is connected
+ 
+# Tested
+  
+  - PMIC
+  - Charging
+  - WS2812
+  - Display
+  - I2C switch
+  - USB-Plug
+  - CH341C
+  - Button
