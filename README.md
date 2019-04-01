@@ -20,11 +20,11 @@ Prototype d0a3733 ordered
 
 # Errors
 
- - [] ESP-Pico-D4 foorpint
- - [] Display cutout
- - [] TCA9535 GND level is ~0.5V when USB is unplugged
- - [] WS2812 leds are not working when USB is plugged
- - [] Button down can only be pressed when the battery is connected
+ - [ ] ESP-Pico-D4 foorpint
+ - [ ] Display cutout
+ - [ ] TCA9535 GND level is ~0.5V when USB is unplugged
+ - [ ] WS2812 leds are not working when USB is plugged
+ - [ ] Button down can only be pressed when the battery is connected
  
 # Tested
   
